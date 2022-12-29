@@ -6,7 +6,7 @@ import FooterComponent from "./components/FooterComponent";
 
 const App = () => {
   return(
-    <div style={{background: "#1769AA"}}>
+    <div style={{background: "black"}}>
       <MainHeader />
       <MainImage />
       <div className="container">

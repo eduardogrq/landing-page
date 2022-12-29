@@ -10,8 +10,9 @@ const styles = {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
+        backgroundColor: '#005895'
     },
-    anchorStyles: 'py-3 col-md-5 col-lg-2 bg-primary rounded mb-3 mb-lg-0 text-white text-decoration-none text-center border',
+    anchorStyles: 'py-3 col-md-5 col-lg-2 rounded mb-3 mb-lg-0 text-white text-decoration-none text-center border',
 
     secondaryButton: {
         border: 'rounded',
@@ -19,7 +20,7 @@ const styles = {
         justifyContent: 'center',
         alignItems: 'center',
     },
-    secondaryAnchorStyles: 'py-3 col-md-5 col-lg-2 bg-warning rounded mb-3 mb-lg-0 text-white text-decoration-none text-center border',
+    secondaryAnchorStyles: 'py-3 col-md-5 col-lg-2 bgSelected rounded mb-3 mb-lg-0 text-white text-decoration-none text-center border',
 }
 
 const CardsComponent = () => {
@@ -30,20 +31,16 @@ const CardsComponent = () => {
         if($submenuElement.classList.contains('d-none')) {
             $submenuElement.classList.remove('d-none')
             $submenuElement.classList.add('animate__animated', 'animate__fadeInDown') 
-            event.target.classList.add('bg-warning')
+            event.target.classList.add('bgSelected')
         } else {
             $submenuElement.classList.remove('animate__fadeInDown')
             $submenuElement.classList.add('d-none')
-            event.target.classList.remove('bg-warning')
+            event.target.classList.remove('bgSelected')
         }
     }
 
-    const onDocumentLoadSuccess = ({ numPages }) => {
-        //setNumPages(numPages);
-      }
-
     return(
-        <div className="py-5 mb-5 px-2">
+        <div className="py-5 mb-5 px-2" id="documentos">
             <h2 className="text-center py-4 text-white">Documentos</h2>
             <hr className="mb-5 bg-white"/>
             <div className="d-flex justify-content-between row">
@@ -75,23 +72,23 @@ const CardsComponent = () => {
 
                 {/* <!-- Modal second submenu--> */}
                 <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
                         <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel1">Documentos</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                        <object data="./qrs-art-merged.pdf" type="application/pdf" width="750px" height="750px">
-                            <embed src="./qrs-art-merged.pdf" type="application/pdf"/>       
-                        </object>
-                            
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                        </div>
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel1">Documento Maestro</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                            <object data="./qrs-art-merged.pdf" type="application/pdf" width="770px" height="550px">
+                                <embed src="./qrs-art-merged.pdf" type="application/pdf"/>       
+                            </object>
+                                
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -9,8 +9,11 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
+import AdbIcon from '@mui/icons-material/Adb';
+import iconSCJN from './../img/LOGO_SCJN_BLANCO.png'
+import iconSiayec from './../img/LOGO_SIAYEC_BLANCO.png'
 
-const pages = ['Inicio', 'Documentos'];
+const pages = ['inicio', 'documentos'];
 
 function MainHeader() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -24,10 +27,11 @@ function MainHeader() {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" style={{'background': 'black'}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
+          <img src={iconSCJN} style={{width:50}} />
           <Typography
             variant="h6"
             noWrap
@@ -35,6 +39,7 @@ function MainHeader() {
             href="/"
             sx={{
               mr: 2,
+              ml: 2,
               display: { xs: 'none', md: 'flex' },
               fontFamily: 'monospace',
               fontWeight: 700,
@@ -43,7 +48,26 @@ function MainHeader() {
               textDecoration: 'none',
             }}
           >
-            SISGR |
+            SISGR
+          </Typography>
+
+          <img src={iconSiayec} style={{width:90}} />
+
+          <Typography
+            variant="h6"
+            noWrap
+            sx={{
+              mr: 2,
+              ml: 2,
+              display: { xs: 'none', md: 'flex' },
+              fontFamily: 'monospace',
+              fontWeight: 700,
+              letterSpacing: '.3rem',
+              color: 'inherit',
+              textDecoration: 'none',
+            }}
+          >
+            |
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -103,11 +127,13 @@ function MainHeader() {
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Button
+              href={`#${page}`}
                 key={page}
-                onClick={handleCloseNavMenu}
+                // onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
                 {page}
+                
               </Button>
             ))}
           </Box>
