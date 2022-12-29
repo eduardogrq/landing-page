@@ -4,13 +4,14 @@ const styles = {
     mainButton: {
         backgroundColor: 'red',
         // maxWidth: '400px',
-        height: '150px',
+        // height: '180px',
+        // pading-top: '',
         border: 'rounded',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
     },
-    anchorStyles: 'col-md-5 col-lg-2 bg-primary rounded mb-3 mb-lg-0 text-white text-decoration-none text-center border'
+    anchorStyles: 'py-3 col-md-5 col-lg-2 bg-primary rounded mb-3 mb-lg-0 text-white text-decoration-none text-center border'
 }
 
 const CardsComponent = () => {
@@ -59,7 +60,7 @@ const CardsComponent = () => {
                     
                 </a>
                 <a href="#"  class={styles.anchorStyles} style={styles.mainButton}>
-                    Sistema Integral y Base de Datos Unificada SIBDU
+                    Protocolos de Actuación, Manual de Procesos y Procedimientos Técnicos y Operativos
                 </a>
             </div>
         </div>
