@@ -40,8 +40,8 @@ const CardsComponent = () => {
     }
 
     return(
-        <div className="py-5 mb-5 px-2" id="documentos">
-            <h2 className="text-center py-4 text-white">Documentos</h2>
+        <div className="py-5 mb-5 px-2" id="modulos">
+            <h2 className="text-center py-4 text-white">Módulos</h2>
             <hr className="mb-5 bg-white"/>
             <div className="d-flex justify-content-between row">
 
@@ -50,17 +50,19 @@ const CardsComponent = () => {
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Documentos</h5>
+                            <h5 class="modal-title" id="exampleModalLabel">Módulos</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
                         <div class="modal-body">
                             <ul>
-                                <li className="mb-2"><a href="#" target="_blank">Plataforma Tecnológica</a></li>
-                                <li className="mb-2"><a href="#" target="_blank">Base de Datos relacionadas con los dispositivos</a></li>
-                                <li className="mb-2"><a href="#" target="_blank">Automatización de reportes manuales</a></li>
-                                <li className="mb-2"><a href="#" target="_blank">Conexión a Bases de Datos complementarias necesarias para mejorar los procesos</a></li>
+                                <li className="mb-2"><a href="#" target="_blank">REVISIÓN MENSUAL BOTIQUIN + TRAUMA KIT AGOSTO 2022</a></li>
+                                <li className="mb-2"><a href="#" target="_blank">FORMATO DE CAPACITACIÓN</a></li>
+                                <li className="mb-2"><a href="#" target="_blank">FORMATO DE ACTIVIDADES SEMANALES</a></li>
+                                <li className="mb-2"><a href="#" target="_blank">CÉDULA OBJETOS EXTRAVIADOS</a></li>
+                                <li className="mb-2"><a href="#" target="_blank">LISTA DE ASISTENCIA</a></li>
+                                <li className="mb-2"><a href="#" target="_blank">REGISTRO INGRESO PROVEEDORES SEMANAL</a></li>
                             </ul>
                         </div>
                         <div class="modal-footer">
@@ -70,7 +72,7 @@ const CardsComponent = () => {
                     </div>
                 </div>
 
-                {/* <!-- Modal second submenu--> */}
+                {/* <!-- second submenu--> */}
                 <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
                     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
                         <div class="modal-content">
@@ -116,7 +118,7 @@ const CardsComponent = () => {
                 <hr className="my-5 bg-white"/>
                 <div className="d-flex justify-content-between row ">
 
-                    <a href="#" className={styles.secondaryAnchorStyles} style={styles.secondaryButton} data-toggle="modal" data-target="#exampleModal">
+                    <a href="#" className={styles.secondaryAnchorStyles} style={styles.secondaryButton}>
                     Plataforma Tecnológica
                     </a>
                     
@@ -125,7 +127,7 @@ const CardsComponent = () => {
                         Base de Datos relacionadas con los dispositivos
                     </a>
 
-                    <a href="#"  className={styles.secondaryAnchorStyles} style={styles.secondaryButton}>
+                    <a href="#"  className={styles.secondaryAnchorStyles} style={styles.secondaryButton} data-toggle="modal" data-target="#exampleModal">
                         Automatización de reportes manuales
                     </a>
                     <a href="#"  className={styles.secondaryAnchorStyles} style={styles.secondaryButton}>

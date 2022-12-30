@@ -13,7 +13,7 @@ import AdbIcon from '@mui/icons-material/Adb';
 import iconSCJN from './../img/LOGO_SCJN_BLANCO.png'
 import iconSiayec from './../img/LOGO_SIAYEC_BLANCO.png'
 
-const pages = ['inicio', 'documentos'];
+const pages = ['inicio', 'modulos'];
 
 function MainHeader() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
