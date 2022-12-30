@@ -41,7 +41,7 @@ const CardsComponent = () => {
 
     return(
         <div className="py-5 mb-5 px-2" id="modulos">
-            <h2 className="text-center py-4 text-white">Sistema Integrad de Seguridad y Gestión de Riesgos</h2>
+            <h2 className="text-center py-4 text-white">Sistema Integral de Seguridad y Gestión de Riesgos</h2>
             <hr className="mb-5 bg-white"/>
             <div className="d-flex justify-content-between row">
 
@@ -57,12 +57,12 @@ const CardsComponent = () => {
                         </div>
                         <div class="modal-body">
                             <ul>
-                                <li className="mb-2"><a href="#" target="_blank">REVISIÓN MENSUAL BOTIQUIN + TRAUMA KIT AGOSTO 2022</a></li>
-                                <li className="mb-2"><a href="#" target="_blank">FORMATO DE CAPACITACIÓN</a></li>
-                                <li className="mb-2"><a href="#" target="_blank">FORMATO DE ACTIVIDADES SEMANALES</a></li>
-                                <li className="mb-2"><a href="#" target="_blank">CÉDULA OBJETOS EXTRAVIADOS</a></li>
-                                <li className="mb-2"><a href="#" target="_blank">LISTA DE ASISTENCIA</a></li>
-                                <li className="mb-2"><a href="#" target="_blank">REGISTRO INGRESO PROVEEDORES SEMANAL</a></li>
+                                <li className="mb-2"><a href="#">REVISIÓN MENSUAL BOTIQUIN + TRAUMA KIT AGOSTO 2022</a></li>
+                                <li className="mb-2"><a href="#">FORMATO DE CAPACITACIÓN</a></li>
+                                <li className="mb-2"><a href="#">FORMATO DE ACTIVIDADES SEMANALES</a></li>
+                                <li className="mb-2"><a href="#">CÉDULA OBJETOS EXTRAVIADOS</a></li>
+                                <li className="mb-2"><a href="#">LISTA DE ASISTENCIA</a></li>
+                                <li className="mb-2"><a href="#">REGISTRO INGRESO PROVEEDORES SEMANAL</a></li>
                             </ul>
                         </div>
                         <div class="modal-footer">
@@ -88,6 +88,29 @@ const CardsComponent = () => {
                                 <li className="mb-2"><a href="#" target="_blank">GPTC - Gestor de protocolos tareas y contactos</a></li>
                                 <li className="mb-2"><a href="#" target="_blank">GAD - Gestor de alertas en dispositivos</a></li>
                                 <li className="mb-2"><a href="#" target="_blank">VEX - Visor de eventos externos</a></li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                {/* <!-- third Modal first submenu--> */}
+                <div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel4" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel4">Base de datos o tablas</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <ul>
+                                <li className="mb-2"><a href="#">Empleados</a></li>
+                                <li className="mb-2"><a href="#">Vehículos</a></li>
                             </ul>
                         </div>
                         <div class="modal-footer">
@@ -125,7 +148,7 @@ const CardsComponent = () => {
                     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel2">Documento Maestro</h5>
+                                <h5 class="modal-title" id="exampleModalLabel2">Manual de Operaciones</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                                 </button>
@@ -179,10 +202,11 @@ const CardsComponent = () => {
                     <a href="#"  className={styles.secondaryAnchorStyles} style={styles.secondaryButton} data-toggle="modal" data-target="#exampleModal">
                         Automatización de reportes manuales
                     </a>
-                    <a href="#"  className={styles.secondaryAnchorStyles} style={styles.secondaryButton}>
+                    <a href="#"  className={styles.secondaryAnchorStyles} style={styles.secondaryButton} data-toggle="modal" data-target="#exampleModal4">
                         {/* Conexión a Bases de Datos complementarias necesarias para mejorar los procesos */}
-                        Base de datos o tablas, empleados <br />
-                        Vehículos
+                        Conexión a Bases de Datos complementarias necesarias para mejorar los procesos
+                        {/* Base de datos o tablas, empleados <br />
+                        Vehículos */}
                     </a>
                 </div>    
             </div>        
