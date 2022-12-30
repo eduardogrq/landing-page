@@ -41,7 +41,7 @@ const CardsComponent = () => {
 
     return(
         <div className="py-5 mb-5 px-2" id="modulos">
-            <h2 className="text-center py-4 text-white">Módulos</h2>
+            <h2 className="text-center py-4 text-white">Sistema Integrad de Seguridad y Gestión de Riesgos</h2>
             <hr className="mb-5 bg-white"/>
             <div className="d-flex justify-content-between row">
 
@@ -108,8 +108,8 @@ const CardsComponent = () => {
                                 </button>
                             </div>
                             <div class="modal-body">
-                            <object data="./Manual_de_operaciones_C2SIC.pdf" type="application/pdf" width="770px" height="550px">
-                                <embed src="./Manual_de_operaciones_C2SIC.pdf" type="application/pdf"/>       
+                            <object data="./Documento_maestro.pdf" type="application/pdf" width="770px" height="550px">
+                                <embed src="./Documento_maestro.pdf" type="application/pdf"/>       
                             </object>
                                 
                             </div>
@@ -131,8 +131,9 @@ const CardsComponent = () => {
                                 </button>
                             </div>
                             <div class="modal-body">
-                            <object data="./qrs-art-merged.pdf" type="application/pdf" width="770px" height="550px">
-                                <embed src="./qrs-art-merged.pdf" type="application/pdf"/>       
+
+                            <object data="./Manual_de_operaciones_C2SIC.pdf" type="application/pdf" width="770px" height="550px">
+                                <embed src="./Manual_de_operaciones_C2SIC.pdf" type="application/pdf"/>       
                             </object>
                                 
                             </div>
