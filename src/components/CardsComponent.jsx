@@ -39,34 +39,12 @@ const CardsComponent = () => {
         }
     }
 
-    // const showList = event => {
-    //     event.preventDefault();
-    //     const $firstButton = document.querySelector('#manualesList')
-    //     if($firstButton.classList.contains('d-none')) {
-    //         $firstButton.classList.remove('d-none')
-    //         // $firstButton.classList.add('animate__animated', 'animate__fadeInDown') 
-    //         // event.target.classList.add('bgSelected')
-    //     } else {
-    //         // $firstButton.classList.remove('animate__fadeInDown')
-    //         $firstButton.classList.add('d-none')
-    //         // event.target.classList.remove('bgSelected')
-    //     }
-
-    // }
-
     return(
         <div className="py-5 mb-5 px-2" id="modulos">
 
             <h2 className="text-center py-4 text-white">Sistema Integral de Seguridad y Gestión de Riesgos</h2>
             <hr className="mb-5 bg-white"/>
             <div className="d-flex justify-content-between row">
-
-            {/* <video width="320" height="240" autoPlay mounted>
-                <source src="./SIGNAL.mp4" type="video/mp4"></source>
-            </video> */}
-
-            <video src="./SIGNAL.mp4" controls autoplay></video>
-
 
                 {/* <!-- Modal first submenu--> */}
                 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -114,12 +92,13 @@ const CardsComponent = () => {
                                 <li className="mb-2">Manuales interactivos</li>
                             </ul>
                             <ul className="ml-3" id="manualesList">
-                                <li>GRS Signal</li>
-                                <li>GPTC SEM</li>
-                                <li>VCC - VEX</li>
-                                <li>GAD Control Center</li>
-                                <li>Everbridge</li>
-                                <li>ITA Alertas</li>
+                            
+                                <li data-toggle="modal" data-target="#exampleModalVideoSignal" style={{cursor: 'pointer'}}>GRS Signal</li>
+                                <li data-toggle="modal" data-target="#exampleModalVideoSEM" style={{cursor: 'pointer'}}>GPTC SEM</li>
+                                <li data-toggle="modal" data-target="#exampleModalVideoVCC" style={{cursor: 'pointer'}}>VCC - VEX</li>
+                                <li data-toggle="modal" data-target="#exampleModalVideoGAD" style={{cursor: 'pointer'}}>GAD Control Center</li>
+                                <li data-toggle="modal" data-target="#exampleModalVideoEverbridge" style={{cursor: 'pointer'}}>Everbridge</li>
+                                <li data-toggle="modal" data-target="#exampleModalVideoITA" style={{cursor: 'pointer'}}>ITA Alertas</li>
                             </ul>
                         </div>
                         <div class="modal-footer">
@@ -190,6 +169,128 @@ const CardsComponent = () => {
                             <object data="./Manual_de_operaciones_C2SIC.pdf" type="application/pdf" width="770px" height="550px">
                                 <embed src="./Manual_de_operaciones_C2SIC.pdf" type="application/pdf"/>       
                             </object>
+                                
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {/* <!-- submenu Video Signal--> */}
+                <div class="modal fade" id="exampleModalVideoSignal" tabindex="-1" role="dialog" aria-labelledby="exampleModalVideoSignal" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalVideoSignal">Manual de Operaciones</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+
+                            <video src="./SIGNAL.mp4" width="765" controls></video>
+                                
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="exampleModalVideoSEM" tabindex="-1" role="dialog" aria-labelledby="exampleModalVideoSEM" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalVideoSEM">Manual de Operaciones</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+
+                            <video src="./SEM.mp4" width="765" controls></video>
+                                
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="exampleModalVideoVCC" tabindex="-1" role="dialog" aria-labelledby="exampleModalVideoVCC" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalVideoVCC">Manual de Operaciones</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+
+                            <video src="./VCC.mp4" width="765" controls></video>
+                                
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="exampleModalVideoGAD" tabindex="-1" role="dialog" aria-labelledby="exampleModalVideoGAD" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalVideoGAD">Manual de Operaciones</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+
+                            <video src="./GAD.mp4" width="765" controls></video>
+                                
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="exampleModalVideoEverbridge" tabindex="-1" role="dialog" aria-labelledby="exampleModalVideoEverbridge" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalVideoEverbridge">Manual de Operaciones</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+
+                            <video src="./Everbridge_Control_Center_Spanish.mp4" width="765" controls></video>
+                                
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="exampleModalVideoITA" tabindex="-1" role="dialog" aria-labelledby="exampleModalVideoITA" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalVideoITA">Manual de Operaciones</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+
+                            <video src="./ITA.mp4" width="765" controls></video>
                                 
                             </div>
                             <div class="modal-footer">
