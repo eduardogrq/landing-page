@@ -39,11 +39,34 @@ const CardsComponent = () => {
         }
     }
 
+    // const showList = event => {
+    //     event.preventDefault();
+    //     const $firstButton = document.querySelector('#manualesList')
+    //     if($firstButton.classList.contains('d-none')) {
+    //         $firstButton.classList.remove('d-none')
+    //         // $firstButton.classList.add('animate__animated', 'animate__fadeInDown') 
+    //         // event.target.classList.add('bgSelected')
+    //     } else {
+    //         // $firstButton.classList.remove('animate__fadeInDown')
+    //         $firstButton.classList.add('d-none')
+    //         // event.target.classList.remove('bgSelected')
+    //     }
+
+    // }
+
     return(
         <div className="py-5 mb-5 px-2" id="modulos">
+
             <h2 className="text-center py-4 text-white">Sistema Integral de Seguridad y Gestión de Riesgos</h2>
             <hr className="mb-5 bg-white"/>
             <div className="d-flex justify-content-between row">
+
+            {/* <video width="320" height="240" autoPlay mounted>
+                <source src="./SIGNAL.mp4" type="video/mp4"></source>
+            </video> */}
+
+            <video src="./SIGNAL.mp4" controls autoplay></video>
+
 
                 {/* <!-- Modal first submenu--> */}
                 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -77,7 +100,7 @@ const CardsComponent = () => {
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel3">Manuales de procedimientos y protocolos de actuación</h5>
+                            <h5 class="modal-title" id="exampleModalLabel3">Acceso a la plataforma y manuales interactivos</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                             </button>
@@ -88,6 +111,15 @@ const CardsComponent = () => {
                                 <li className="mb-2"><a href="#" target="_blank">GPTC - Gestor de protocolos tareas y contactos</a></li>
                                 <li className="mb-2"><a href="#" target="_blank">GAD - Gestor de alertas en dispositivos</a></li>
                                 <li className="mb-2"><a href="#" target="_blank">VEX - Visor de eventos externos</a></li>
+                                <li className="mb-2">Manuales interactivos</li>
+                            </ul>
+                            <ul className="ml-3" id="manualesList">
+                                <li>GRS Signal</li>
+                                <li>GPTC SEM</li>
+                                <li>VCC - VEX</li>
+                                <li>GAD Control Center</li>
+                                <li>Everbridge</li>
+                                <li>ITA Alertas</li>
                             </ul>
                         </div>
                         <div class="modal-footer">
